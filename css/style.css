@@ -36,13 +36,23 @@ ul {
 }
 /* Sezione portfolio */
 
-#portfolio div img {
-    max-width:
-}
-@media screen and (min-width:576px)
-{
+#portfolio .box  {
 
+    width: %;
 }
+#portfolio .box > img  {
+
+    width: 100%;
+}
+
+@media screen and (min-width: 576px)
+{
+    #portfolio .box > img  {
+
+        width: 50%;
+    }
+}
+
 @media screen and (min-width:768px)
 
 {
