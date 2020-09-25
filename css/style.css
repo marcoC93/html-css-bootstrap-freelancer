@@ -38,18 +38,18 @@ ul {
 
 #portfolio .box  {
 
-    width: %;
+    width: 300px;
 }
 #portfolio .box > img  {
 
-    width: 100%;
+    width: 300px;
 }
 
 @media screen and (min-width: 576px)
 {
     #portfolio .box > img  {
 
-        width: 50%;
+        /* width: 50%; */
     }
 }
 
