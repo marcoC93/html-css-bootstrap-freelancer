@@ -12,12 +12,33 @@ ul {
     list-style-type: none;
 
 }
-.navbar-default .navbar-nav > li > a{
-    color: white;
+.navbar {
+    margin-bottom: 0;
+	border: 0;
+}
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+	color: #yellow;
+	background-color: #e7e7e7;
 }
 
+.navbar-default .navbar-toggle {
+	border-color: #1abc9c;
+}
 
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #1abc9c;
+}
+/* Sezione jumbotron */
 
+.avatar {
+    max-height: 200px;
+}
+/* Sezione portfolio */
+
+#portfolio div img {
+    max-width:
+}
 @media screen and (min-width:576px)
 {
 
@@ -25,6 +46,6 @@ ul {
 @media screen and (min-width:768px)
 
 {
-    
+
 
 }
