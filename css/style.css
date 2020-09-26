@@ -1,3 +1,4 @@
+    /* Sezione classi generaliste */
 .bg-primary {
     background-color: #1abc9c !important;
 }
@@ -12,6 +13,8 @@ ul {
     list-style-type: none;
 
 }
+
+/* Inizio sezione "navbar"  */
 .navbar {
     margin-bottom: 0;
 	border: 0;
@@ -38,24 +41,58 @@ ul {
 
 #portfolio .box  {
 
-    width: 300px;
+    width: 100%;
 }
 #portfolio .box > img  {
 
-    width: 300px;
+    width: 100%;
 }
+/* #portfolio .box:hover  {
+    position: relative;
+    background-color: green;
+    z-index: 4;
+} */
+/* Sezione "about" */
+div h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Sezione Contatti */
 
+.form-control {
+    width: 100%;
+    border: none ;
+    border-bottom: 1px solid #999;
+    font-weight: 400;
+    box-shadow: none ;
+    margin-bottom: 10px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border: none;
+}
 @media screen and (min-width: 576px)
 {
     #portfolio .box > img  {
 
         /* width: 50%; */
+
+    }
+
+    .form-control {
+        width: 100%;
+
     }
 }
 
 @media screen and (min-width:768px)
 
 {
-
+    .navbar-form .form-control {
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+}
+    
 
 }
