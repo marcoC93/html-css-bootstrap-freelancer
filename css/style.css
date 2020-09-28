@@ -57,19 +57,120 @@ div h2 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.box {
+    margin-bottom: 10px;
+	background-color: #1abc9c ;
+    position: relative;
+
+
+}
+/* Overlay sfondo  */
+.box::after {
+    content: '' ;
+    background-color: #1abc9c ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0.7;
+    transition: all 3s ;
+}
+.box:hover:after {
+    visibility: visible;
+}
+/* Overlay plus */
+.box::before {
+    content: "\f067"  ;
+    font-family: "Font awesome 5 free";
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: all 3s ;
+    z-index: 4;
+    visibility: hidden;
+    ;
+}
+.box:hover:before{
+    visibility: visible;
+}
 /* Sezione Contatti */
 
 .form-control {
     width: 100%;
     border: none ;
-    border-bottom: 1px solid #999;
+    border-radius: 0;
     font-weight: 400;
     box-shadow: none ;
     margin-bottom: 10px;
+    border-style: none;
+    border-bottom: 1px solid #999;
 }
 .form-control:focus {
     box-shadow: none;
-    border: none;
+    /* border: none; */
+    border-bottom: 1px solid #999;
+}
+.form-group {
+    position: relative;
+}
+
+#name {
+    position: absolute;
+    opacity: 0;
+    top: -30px;
+    left: 0;
+    color: green;
+    transition: all 2s ;
+}
+#email {
+    position: absolute;
+    opacity: 0;
+    top: -30px;
+    left: 0;
+    color: green;
+    transition: all 2s ;
+}
+#phone-number {
+    position: absolute;
+    opacity: 0;
+    top: -30px;
+    left: 0;
+    color: green;
+    transition: all 2s ;
+}
+
+ /* Effetti :focus sezione "Contatti" */
+[placeholder="Name"]:focus + #name {
+    top: -10px;
+    left: 0;
+    opacity: 1;
+}
+[placeholder="Email"]:focus + #email {
+    top: -10px;
+    left: 0;
+    opacity: 1;
+}
+[placeholder="Phone number"]:focus + #phone-number {
+    top: -10px;
+    left: 0;
+    opacity: 1;
+}
+[placeholder="message"]:focus + #message {
+    top: -10px;
+    left: 0;
+    opacity: 1;
+}
+[placeholder="text area"]:focus + #text-area {
+    top: -10px;
+    left: 0;
+    opacity: 1;
 }
 @media screen and (min-width: 576px)
 {
@@ -93,6 +194,6 @@ div h2 {
 	width: 100%;
 	vertical-align: middle;
 }
-    
+
 
 }
